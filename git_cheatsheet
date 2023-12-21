@@ -1,0 +1,19 @@
+// Change username
+git config user.name "YOURUSERNAME"
+
+// Show username
+git config user.name
+
+// Show current branch
+git branch
+
+// Create a new branch from current branch
+git branch <branch-name>
+
+// Create a new branch from current branch and switch to that branch (2 ways)
+git switch -c <new-branch-name-to-create>
+git checkout -b <new-branch-name-to-create>
+
+// Switch branch (2 ways)
+git switch <branch-name-to-switch>
+git checkout <branch-name-to-switch>
