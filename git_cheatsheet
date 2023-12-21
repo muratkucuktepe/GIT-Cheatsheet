@@ -4,6 +4,12 @@ git config user.name "YOURUSERNAME"
 // Show username
 git config user.name
 
+// Set to update the local list of remote git branches automatically every time you run git pull or git fetch using below command.
+git config remote.origin.prune true
+
+// Update local list of remote branches
+git remote update origin --prune
+
 // Show current branch
 git branch
 
@@ -17,3 +23,9 @@ git checkout -b <new-branch-name-to-create>
 // Switch branch (2 ways)
 git switch <branch-name-to-switch>
 git checkout <branch-name-to-switch>
+
+// Show the commit logs
+git log
+
+// Show the commit logs in oneline
+git log --oneline
