@@ -1,3 +1,16 @@
+// Initialize git which creates .git folder
+git init
+
+// Adding all changes in working directory to the stage area
+git add .
+
+// Adding multiple changes from working directory to the staging area (first-file, second-file)
+git add <first-file> <second-file>
+
+// Commiting a change with message. 1: Add the changes to staging area 2: Commit with message
+git add.
+git commit -m "your-message-here"
+
 // Change username
 git config user.name "YOURUSERNAME"
 
