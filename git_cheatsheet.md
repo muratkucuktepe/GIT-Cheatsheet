@@ -1,5 +1,12 @@
-### ADD & COMMIT
+### INITIALIZE GIT
+---
 
+**- Initialize git which creates .git folder**
+```
+git init
+```
+
+### ADD & COMMIT
 ---
 **- Adding all changes in working directory to the stage area.**
 ```
@@ -22,4 +29,98 @@ git add <first-file> <second-file>`
 **- Adding a change to staging area and commiting at the same time**
 ```
 git commit -a -m "your-message-here"
+```
+
+### AMEND
+---
+
+**- Amend the last commit.**
+```
+git add <my-forgotten-changes>   // Stage your forgotten changes
+git commit --amend               // Amend your last commit
+                                 // Write your commit on terminal and hit esc, then wq!
+```
+
+### CONFIGURATION
+---
+
+**- Change username.**
+```
+git config user.name "your-user-name"
+```
+**- Show username.**
+```
+git config user.name
+```
+**- Set to update the local list of remote git branches automatically every time you run git pull or git fetch using below command.**
+```
+git config remote.origin.prune true
+```
+
+### CREATE BRANCH
+
+**- Create a new branch from current branch.**
+```
+git branch <new-branch-name>
+```
+**- Create a new branch from current branch and switch to that branch.**
+```
+git switch -c <new-branch-name-to-create>     // 1. way
+git checkout -b <new-branch-name-to-create>   // 2. way
+```
+
+### SHOW BRANCH
+
+**- Show current branch.**
+```
+git branch
+```
+
+### SWITCH BRANCH
+
+**- Switch branch.**
+```
+git switch <branch-name-to-switch>     // 1. way
+git checkout <branch-name-to-switch>   // 2. way
+```
+
+### CLEAN UP BRANCH
+
+**- Update local list of remote branches.**
+```
+git remote update origin --prune
+```
+
+### DELETE BRANCH
+
+**- Delete branch (2 ways). It only deletes the branch if it has already been fully merged in its upstream branch. You can not delete branch you are on.**
+```
+git branch -d <branch-name-to-delete>         // 2. way
+git branch --delete <branch-name-to-delete>   // 1. way
+```
+**- Delete branch. It deletes the branch irrespective of its merged status. This is a short version of '*"git branch --delete --force <branch-name-to-delete>". You can not delete branch you are on.***
+```
+git branch -D <branch-name-to-delete>
+```
+**- Delete remote branch.**
+```
+git push -d origin <branch-name-to-delete>
+```
+
+### RENAME BRANCH
+
+**- Rename your local branch. You should be on the branch in order to rename it.**
+```
+git branch -m <new-branch-name>
+```
+
+### LOGS
+
+**- Show the commit logs.**
+```
+git log
+```
+**- Show the commit logs in oneline.**
+```
+git log --oneline
 ```
