@@ -23,7 +23,7 @@ git add <first-file> <second-file>`
 **- Commiting a change with message.**
 ```
 1: git add .                           // Add changes to the staging area
-2: git commit -m "your-message-here"   //Commit with a message
+2: git commit -m "your-message-here"   // Commit with a message
 ```
 ---
 **- Adding a change to staging area and commiting at the same time**
@@ -61,7 +61,8 @@ git config remote.origin.prune true
 
 **- Create a new branch from current branch.**
 ```
-git branch <new-branch-name>
+git branch <new-branch-name>   // Create branch
+git switch <new-branch-name>   // Switch to the new branch
 ```
 **- Create a new branch from current branch and switch to that branch.**
 ```
