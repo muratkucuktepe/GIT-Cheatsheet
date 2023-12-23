@@ -124,3 +124,11 @@ git log
 ```
 git log --oneline
 ```
+
+### MERGE BRANCH
+
+**- Merging branch A into branch B**
+```
+git switch <branch-B>   // Switch branch.
+git merge <branch-A>    // Merge branch A into B
+```
