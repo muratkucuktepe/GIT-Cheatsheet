@@ -59,12 +59,12 @@ git config remote.origin.prune true
 
 ### CREATE BRANCH
 
-**- Create a new branch from current branch.**
+**- Create a new branch from current branch and switch to that branch.**
 ```
 git branch <new-branch-name>   // Create branch
 git switch <new-branch-name>   // Switch to the new branch
 ```
-**- Create a new branch from current branch and switch to that branch.**
+**- Create a new branch from current branch and switch to that branch directly.**
 ```
 git switch -c <new-branch-name-to-create>     // 1. way
 git checkout -b <new-branch-name-to-create>   // 2. way
