@@ -28,7 +28,8 @@ git add <first-file> <second-file>`
 ---
 **- Adding a change to staging area and commiting at the same time**
 ```
-git commit -a -m "your-message-here"
+git commit -a -m "your-message-here"   // 1. Way
+git commit -am "your-message-here"     // 2. Way
 ```
 
 ### AMEND
@@ -132,4 +133,21 @@ git log --oneline
 ```
 git switch <branch-B>   // Switch branch.
 git merge <branch-A>    // Merge branch A into B
+```
+
+### DIFF
+
+**- List all the changes in the working directory that are NOT staged for the next commit.**
+```
+git diff
+```
+**- List all the changes in the working tree since your last commit.(STAGED and UNSTAGED changes)**
+```
+git diff HEAD
+```
+**- List all the changes between staging area and your last commit.**
+** "Show me what will be included in my commit if I run git commit right now**
+```
+git diff --staged   // 1. Way
+git diff --cached   // 2. Way
 ```
