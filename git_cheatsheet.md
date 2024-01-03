@@ -137,7 +137,7 @@ git merge <branch-A>    // Merge branch A into B
 
 ### DIFF
 
-**- List all the changes in the working directory that are NOT staged for the next commit.**
+**- List all the changes in the working directory that are NOT STAGED for the next commit.**
 ```
 git diff
 ```
@@ -145,7 +145,7 @@ git diff
 ```
 git diff HEAD
 ```
-**- List all the changes between staging area and your last commit.**
+**- List all the changes between staging area and your last commit. (STAGED CHANGES)**
 ** "Show me what will be included in my commit if I run git commit right now**
 ```
 git diff --staged   // 1. Way
