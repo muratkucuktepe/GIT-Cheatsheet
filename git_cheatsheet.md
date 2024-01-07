@@ -145,9 +145,17 @@ git diff
 ```
 git diff HEAD
 ```
+**- List all the changes in the working tree of a SPECIFIC FILE since your last commit.(STAGED and UNSTAGED changes)**
+```
+git diff HEAD <file-name>
+```
 **- List all the changes between staging area and your last commit. (STAGED CHANGES)**
 ** "Show me what will be included in my commit if I run git commit right now**
 ```
 git diff --staged   // 1. Way
 git diff --cached   // 2. Way
+```
+**- List all the changes between staging area and your last commit of a SPECIFIC FILE. (STAGED CHANGES)**
+```
+git diff --staged <file-name>
 ```
