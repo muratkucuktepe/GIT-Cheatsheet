@@ -159,3 +159,8 @@ git diff --cached   // 2. Way
 ```
 git diff --staged <file-name>
 ```
+**- List all the changes between two BRANCHES BranchA and BranchB. Place of the files matters, AB or BA**
+```
+git diff BranchA..BranchB   // 1. Way
+git diff BranchA  BranchB   // 2. Way
+```
