@@ -164,3 +164,8 @@ git diff --staged <file-name>
 git diff BranchA..BranchB   // 1. Way
 git diff BranchA  BranchB   // 2. Way
 ```
+**- List all the changes between two COMMITS CommitHashA and CommitHashB. Place of the files matters, AB or BA**
+```
+git diff CommitHashA..CommitHashB   // 1. Way
+git diff CommitHashA  CommitHashB   // 2. Way
+```
