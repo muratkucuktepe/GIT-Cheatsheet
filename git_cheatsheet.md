@@ -179,3 +179,7 @@ git stash
 ```
 git stash pop
 ```
+**- Re-applying stashed changes without removing stash. This is useful if stash is applied multiple branches**
+```
+git stash apply
+```
