@@ -169,3 +169,13 @@ git diff BranchA  BranchB   // 2. Way
 git diff CommitHashA..CommitHashB   // 1. Way
 git diff CommitHashA  CommitHashB   // 2. Way
 ```
+### STASH CHANGES
+
+**- Stashing (or saving) your changes**
+```
+git stash
+```
+**- Re-applying stashed changes**
+```
+git stash pop
+```
