@@ -175,7 +175,7 @@ git diff CommitHashA  CommitHashB   // 2. Way
 ```
 git stash
 ```
-**- Re-applying stashed changes**
+**- Re-applying stashed changes. It removes saved changes from stash**
 ```
 git stash pop
 ```
@@ -185,9 +185,14 @@ git stash apply
 ```
 **- Stashing multiple times**
 ```
+// Make first change
 git stash                   // 1st stash
+// Make second change
 git stash                   // 2nd stash
+// Make third change
 git stash                   // 3rd stash
 git stash list              // show the list of stashes
-git stash apply stash@{2}   // Applying just a specific stash, second stash
+git stash apply stash@{2}   // Applying just a specific stash, second stash, but does not remove stash
+git stash drop stash@{2}    // Removes the second stash
+git stash clear             // Clears all stash
 ```
