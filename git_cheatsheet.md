@@ -173,7 +173,8 @@ git diff CommitHashA  CommitHashB   // 2. Way
 
 **- Stashing (or saving) your changes**
 ```
-git stash
+git stash        // 1. Way
+git stash save   // 2. Way
 ```
 **- Re-applying stashed changes. It removes saved changes from stash**
 ```
