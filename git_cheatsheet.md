@@ -183,3 +183,11 @@ git stash pop
 ```
 git stash apply
 ```
+**- Stashing multiple times**
+```
+git stash                   // 1st stash
+git stash                   // 2nd stash
+git stash                   // 3rd stash
+git stash list              // show the list of stashes
+git stash apply stash@{2}   // Applying just a specific stash, second stash
+```
