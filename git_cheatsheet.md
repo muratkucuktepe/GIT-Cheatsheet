@@ -197,9 +197,18 @@ git stash apply stash@{2}   // Applying just a specific stash, second stash, but
 git stash drop stash@{2}    // Removes the second stash
 git stash clear             // Clears all stash
 ```
-### TIME TRAVELING ON BRANCH
+### WORKING WITH PREVIOUS COMMITS / BRANCHES
 
-**- Switching a certain point at the branch history**
+**- Switching a certain commit at the branch history**
 ```
-git checkout <commit-hash>   // The first 7 digits of the long hash can be also used here.
+// The first 7 digits of the long hash can be also used here.
+git checkout <commit-hash>   // It gives a DETACHED HEAD error because HEAD points to a hash insead of branch reference.
+```
+**- Switching previously checked out branch**
+```
+git checkout -
+```
+**- Switching X commit before master**
+```
+git checkout HEAD~X   // Ctrl + Alt + + -> ~ on keyboard
 ```
