@@ -197,3 +197,9 @@ git stash apply stash@{2}   // Applying just a specific stash, second stash, but
 git stash drop stash@{2}    // Removes the second stash
 git stash clear             // Clears all stash
 ```
+### TIME TRAVELING ON BRANCH
+
+**- Switching a certain point at the branch history**
+```
+git checkout <commit-hash>   // The first 7 digits of the long hash can be also used here.
+```
