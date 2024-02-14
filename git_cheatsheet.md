@@ -212,9 +212,16 @@ git checkout -
 ```
 git checkout HEAD~X   // Ctrl + Alt + + -> ~ on keyboard
 ```
-**- Undoing the the last changes to the last commit. ROLLBACK**
+**- Undoing the the last changes to the last commit. ROLLBACK -> It goes back to recent commit, deletes recent unsaved changes**
 ```
-git checkout HEAD <file>            // 1. Way
-git checkout -- <file>              // 2. Way
-git checkout -- <file-1> <file-2>   // With multiple files
+git checkout HEAD <file-name>                 // 1. Way
+git checkout -- <file-name>                   // 2. Way
+git restore <file-name>                       // 3. Way
+git checkout -- <file-name-1> <file-name-2>   // With multiple files
+```
+**- Restoring to X commits before HEAD**
+```
+// Can not retrieve last unsaved changes.
+// But you can use git restore <file-name> to restore till to HEAD
+git restore --source HEAD~X <file-name>    // It is possible to restore multiple files like above
 ```
