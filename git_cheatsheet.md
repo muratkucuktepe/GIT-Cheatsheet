@@ -212,3 +212,7 @@ git checkout -
 ```
 git checkout HEAD~X   // Ctrl + Alt + + -> ~ on keyboard
 ```
+**- Undoing the the last changes to the last commit. ROLLBACK**
+```
+git checkout HEAD <file>
+```
