@@ -229,3 +229,10 @@ git restore --source HEAD~X <file-name>    // It is possible to restore multiple
 ```
 git restore --staged <file-name>
 ```
+**-Undoing commits**
+```
+// If you committed accidentally, firstly check the log
+git log --oneline
+// Then copy NOT the LAST but PREVIOUS following commit hash, then
+git reset <commit-hash>  // This DOESN'T delete the changes in your WORKING DIRECTORY
+```
