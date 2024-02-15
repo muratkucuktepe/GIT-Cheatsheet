@@ -254,4 +254,6 @@ git revert <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 // This will generate a NEW commit, ahead of the old ones and reverts the changes.
 // But then a new screen appears. You should write commit message because git revert creates a new commit.
 // IMPORTANT: This deletes the changes in the reverted commit.
+// If other collaborators have the copy of the commit which you want to revert, do not use reset but use revert.
+// It will create new commit, so collaborators can deal with it.
 ```
