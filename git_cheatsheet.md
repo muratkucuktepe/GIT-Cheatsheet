@@ -245,7 +245,7 @@ git log --oneline
 // If you have commits first-second-third and you want to remove third, choose second commits hash.
 git reset --hard <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 ```
-**- REVERT: Removing commit by creating an extra new commit**
+**- REVERT: Removing commit by creating an extra new commit and deleting changes in working directory**
 ```
 // If you committed accidentally, firstly check the log
 git log --oneline
@@ -253,4 +253,5 @@ git log --oneline
 git revert <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 // This will generate a NEW commit, ahead of the old ones and reverts the changes.
 // But then a new screen appears. You should write commit message because git revert creates a new commit.
+// IMPORTANT: This deletes the changes in the reverted commit.
 ```
