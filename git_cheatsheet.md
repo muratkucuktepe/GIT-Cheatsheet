@@ -229,10 +229,19 @@ git restore --source HEAD~X <file-name>    // It is possible to restore multiple
 ```
 git restore --staged <file-name>
 ```
-**-Undoing commits**
+**-Undoing commits WITHOUT losing changes in working directory**
 ```
 // If you committed accidentally, firstly check the log
 git log --oneline
-// Then copy NOT the LAST but PREVIOUS following commit hash, then
+// Then copy NOT the LAST but PREVIOUS following commit hash.
+// If you have commits first-second-third and you want to remove third, choose second commits hash.
 git reset <commit-hash>  // This DOESN'T delete the changes in your WORKING DIRECTORY
+```
+**-Undoing commits BY also losing changes in working directory**
+```
+// If you committed accidentally, firstly check the log
+git log --oneline
+// Then copy NOT the LAST but PREVIOUS following commit hash.
+// If you have commits first-second-third and you want to remove third, choose second commits hash.
+git reset --hard <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 ```
