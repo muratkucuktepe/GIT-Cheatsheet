@@ -225,3 +225,7 @@ git checkout -- <file-name-1> <file-name-2>   // With multiple files
 // But you can use git restore <file-name> to restore till to HEAD
 git restore --source HEAD~X <file-name>    // It is possible to restore multiple files like above
 ```
+**- Restoring what you accidentally added to the staging area with git add and need to unstage them**
+```
+git restore --staged <file-name>
+```
