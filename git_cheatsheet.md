@@ -5,7 +5,13 @@
 ```
 git init
 ```
+### CLONE
+---
 
+**- Clone a repo from a url**
+```
+git clone <url>   // Be sure that you are not already in a repo
+```
 ### ADD & COMMIT
 ---
 **- Adding all changes in working directory to the stage area.**
