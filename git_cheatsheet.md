@@ -275,3 +275,8 @@ git remove -v    // Verbose, for more info
 ```
 git remote add <name> <url>   //Ex: git remote add origin https://github.com/blah/repo.git
 ```
+**- Renaming a remote**
+```
+git remote rename <old> <new>   // Rename it
+git remote remove <name>        // Remove old one
+```
