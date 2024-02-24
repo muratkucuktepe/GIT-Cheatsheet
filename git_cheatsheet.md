@@ -271,3 +271,7 @@ git revert <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 git remote   // Remotes
 git remove -v    // Verbose, for more info
 ```
+**- Adding a new remote**
+```
+git remote add <name> <url>   //Ex: git remote add origin https://github.com/blah/repo.git
+```
