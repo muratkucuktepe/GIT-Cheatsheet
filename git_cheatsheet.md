@@ -280,3 +280,11 @@ git remote add <name> <url>   //Ex: git remote add origin https://github.com/bla
 git remote rename <old> <new>   // Rename it
 git remote remove <name>        // Remove old one
 ```
+
+### PUSH
+
+**- Pushing local branch to remote**
+```
+// Pushing local master branch to remote
+git push <remote> <branch>   // Common pattern: git push origin master 
+```
