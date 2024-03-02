@@ -304,4 +304,10 @@ git push --set-upstream origin <local-branch>   // 2. Way
 
 // If you do it once, you can use shorthand afterwards.
 git push
+
+// If you want to set upstream branch which is different than local branch
+git push -u <remote> <local-branch>:<remote-branch>
+
+// Ex: Connecting local branch called apple to remote branch banana in remote origin
+git push -u origin apple:banana
 ```
