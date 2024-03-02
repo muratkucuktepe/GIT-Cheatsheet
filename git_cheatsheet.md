@@ -296,3 +296,11 @@ git push <remote> <local-branch>:<remote-branch>  // Common pattern: git push or
 // Ex: Pushing local branch called apple to remote branch banana in remote origin
 git push origin apple:banane
 ```
+**- Connecting local branch A with remote branch A**
+```
+// Connect the local branch A to remote branch B. -u stands for upstream
+git push -u <remote> <remote-branch>  // git push -u origin master 
+
+// If you do it once, you can use shorthand afterwards.
+git push
+```
