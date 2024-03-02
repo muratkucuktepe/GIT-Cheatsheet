@@ -283,8 +283,16 @@ git remote remove <name>        // Remove old one
 
 ### PUSH
 
-**- Pushing local branch to remote**
+**- Pushing local branch A to remote branch A (if there  is no remote branch, it creates new)**
 ```
 // Pushing local master branch to remote
 git push <remote> <branch>   // Common pattern: git push origin master 
+```
+**- Pushing local branch A to remote B**
+```
+// Pushing local master branch to remote
+git push <remote> <local-branch>:<remote-branch>  // Common pattern: git push origin master
+
+// Ex: Pushing local branch called apple to remote branch banana in remote origin
+git push origin apple:banane
 ```
