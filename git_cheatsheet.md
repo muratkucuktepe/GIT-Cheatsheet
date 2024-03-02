@@ -300,7 +300,7 @@ git push origin apple:banane
 ```
 // Connect the local branch A to remote branch B. -u stands for upstream
 git push -u <remote> <remote-branch>            // 1. Way Ex: git push -u origin master
-git push --set-upstream origin <local-branch>   // 2. Way
+git push --set-upstream origin <remote-branch>   // 2. Way
 
 // If you do it once, you can use shorthand afterwards.
 git push
