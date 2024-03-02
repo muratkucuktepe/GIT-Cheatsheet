@@ -103,8 +103,8 @@ git remote update origin --prune
 
 **- Delete branch (2 ways). It only deletes the branch if it has already been fully merged in its upstream branch. You can not delete branch you are on.**
 ```
-git branch -d <branch-name-to-delete>         // 2. way
-git branch --delete <branch-name-to-delete>   // 1. way
+git branch -d <branch-name-to-delete>         // 1. way
+git branch --delete <branch-name-to-delete>   // 2. way
 ```
 **- Delete branch. It deletes the branch irrespective of its merged status. This is a short version of '*"git branch --delete --force <branch-name-to-delete>". You can not delete branch you are on.***
 ```
@@ -299,7 +299,8 @@ git push origin apple:banane
 **- Connecting local branch A with remote branch A**
 ```
 // Connect the local branch A to remote branch B. -u stands for upstream
-git push -u <remote> <remote-branch>  // git push -u origin master 
+git push -u <remote> <remote-branch>            // 1. Way Ex: git push -u origin master
+git push --set-upstream origin <local-branch>   // 2. Way
 
 // If you do it once, you can use shorthand afterwards.
 git push
