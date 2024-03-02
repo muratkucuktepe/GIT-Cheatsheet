@@ -286,6 +286,7 @@ git remote remove <name>        // Remove old one
 **- Pushing local branch A to remote branch A (if there  is no remote branch, it creates new)**
 ```
 // Pushing local master branch to remote
+// You do not need to be on the same branch. You can be on branch A and use command git push origin branch-B
 git push <remote> <branch>   // Common pattern: git push origin master 
 ```
 **- Pushing local branch A to remote B**
