@@ -18,7 +18,6 @@ git clone <url>   // Be sure that you are not already in a repo
 ```
 git add .
 ```
-
 ---
 **- Adding multiple changes from working directory to the staging area (first-file, second-file).**
 ```
@@ -311,4 +310,10 @@ git push -u <remote> <local-branch>:<remote-branch>
 
 // Ex: Connecting local branch called apple to remote branch banana in remote origin
 git push -u origin apple:banana
+```
+### TRACKING BRANCHes
+---
+**- View the remote branches our local repository knows about.**
+```
+git branch -r
 ```
