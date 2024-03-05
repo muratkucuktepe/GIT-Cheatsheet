@@ -316,9 +316,16 @@ git push -u <remote> <local-branch>:<remote-branch>
 // Ex: Connecting local branch called apple to remote branch banana in remote origin
 git push -u origin apple:banana
 ```
-### TRACKING BRANCHes
+### TRACKING BRANCHES
 ---
 **- View the remote branches our local repository knows about.**
 ```
 git branch -r
+```
+### FETCHING UPDATES
+---
+**- Fetch everything from origin**
+```
+// It fetches new code from remote to the local repository, NOT working directory
+git fetch <remote>   // If not specified, remote defaults to origin
 ```
