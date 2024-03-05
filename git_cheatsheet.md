@@ -90,6 +90,11 @@ git branch
 git switch <branch-name-to-switch>     // 1. way
 git checkout <branch-name-to-switch>   // 2. way
 ```
+**- Switch a remote branch which has just a reference locally.**
+```
+git switch <remote-branch>                      // 1. way (new way) Ex: git switch my-remote-branch
+git checkout --track <remote>/<remote-branch>   // 2. way (old way) Ex: git checkout --track origin/my-remote-branch
+```
 
 ### CLEAN UP BRANCH
 
