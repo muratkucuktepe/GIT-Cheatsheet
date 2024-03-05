@@ -329,3 +329,7 @@ git branch -r
 // It fetches new code from remote to the local repository, NOT working directory
 git fetch <remote>   // If not specified, remote defaults to origin
 ```
+```
+git fetch <remote> <branch>      // Fetches from a specific branch. Ex: git fetch origin master
+git checkout <remote>/<branch>   // To see the fetched changes. Ex: git checkout origin/master   
+```
