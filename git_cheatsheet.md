@@ -323,6 +323,7 @@ git push -u origin apple:banana
 ```
 // git pull = git fetch + git merge
 git pull <remote> <remote-branch>   // Ex: git pull origin master
+git pull  // Shorter syntax. If remote is default to origin and remote branch will be default to your configured branch.
 ```
 
 ### TRACKING BRANCHES
