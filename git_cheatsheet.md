@@ -316,6 +316,15 @@ git push -u <remote> <local-branch>:<remote-branch>
 // Ex: Connecting local branch called apple to remote branch banana in remote origin
 git push -u origin apple:banana
 ```
+
+### PULL
+---
+**- Pulling changes integrates remote changes to local changes which you are currently on.**
+```
+// git pull = git fetch + git merge
+git pull <remote> <remote-branch>   // Ex: git pull origin master
+```
+
 ### TRACKING BRANCHES
 ---
 **- View the remote branches our local repository knows about.**
