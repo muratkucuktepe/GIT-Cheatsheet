@@ -320,7 +320,7 @@ git push -u origin apple:banana
 ---
 **- View the remote branches our local repository knows about.**
 ```
-git branch -r
+git branch -r   // Note: It shows just remote branches in LOCAL REPOSITORY not in Origin!
 ```
 ### FETCHING UPDATES
 ---
@@ -328,6 +328,7 @@ git branch -r
 ```
 // It fetches new code from remote to the local repository, NOT working directory
 git fetch <remote>   // If not specified, remote defaults to origin
+git fetch            // You can just shorten it. After that git status shows your difference with remote
 ```
 ```
 git fetch <remote> <branch>      // Fetches from a specific branch. Ex: git fetch origin master
