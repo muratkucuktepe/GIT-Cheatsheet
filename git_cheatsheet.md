@@ -344,3 +344,10 @@ git fetch            // You can just shorten it. After that git status shows you
 git fetch <remote> <branch>      // Fetches from a specific branch. Ex: git fetch origin master
 git checkout <remote>/<branch>   // To see the fetched changes. Ex: git checkout origin/master   
 ```
+### REBASE
+---
+**- Rebasing feature branch on top of master branch.**
+```
+git switch feature   // Switch to the feature branch
+git rebase master    // Put it on top of master branch Ex: M + M + M + F + F
+```
