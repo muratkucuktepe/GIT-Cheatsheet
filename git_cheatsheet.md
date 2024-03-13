@@ -351,3 +351,7 @@ git checkout <remote>/<branch>   // To see the fetched changes. Ex: git checkout
 git switch feature   // Switch to the feature branch
 git rebase master    // Put it on top of master branch Ex: M + M + M + F + F
 ```
+**- Abort rebasing in case of a conflict.**
+```
+git rebase --abort
+```
