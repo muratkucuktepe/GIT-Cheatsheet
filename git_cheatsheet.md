@@ -355,3 +355,9 @@ git rebase master    // Put it on top of master branch Ex: M + M + M + F + F
 ```
 git rebase --abort
 ```
+**- Solving merge conflicts after rebase**
+```
+// After you rebase and solve merge conflicts
+git add <files>
+git rebase --continue
+```
