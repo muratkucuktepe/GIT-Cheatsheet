@@ -365,4 +365,11 @@ git rebase --continue
 ```
 // -i means interactive mode
 git rebase -i HEAD~4   // Rebase not another branch but some commits on to the head they are currently on.
+
+// Text editor will be opened.
+pick:   use the commit
+reword: use the commit but edit the commit message
+edit:   use commit but stop for amending
+fixup:  use commit contents but meld it into previous commit and discard the commit message
+drop:   remove commit
 ```
