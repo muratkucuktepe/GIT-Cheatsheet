@@ -361,3 +361,8 @@ git rebase --abort
 git add <files>
 git rebase --continue
 ```
+**- Interactive rebase**
+```
+// -i means interactive mode
+git rebase -i HEAD~4   // Rebase not another branch but some commits on to the head they are currently on.
+```
