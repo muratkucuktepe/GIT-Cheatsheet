@@ -5,6 +5,7 @@
 ```
 git init
 ```
+---
 ### CLONE
 ---
 
@@ -12,6 +13,7 @@ git init
 ```
 git clone <url>   // Be sure that you are not already in a repo
 ```
+---
 ### ADD & COMMIT
 ---
 **- Adding all changes in working directory to the stage area.**
@@ -386,4 +388,14 @@ git checkout <tag>  // Ex: git checkout 17.1.1
 **- Find the difference between two tags.**
 ```
 git diff <tag1> <tag2>   // Ex: git diff v5.1.1 v5.1.0
+```
+**- Adding lightweight tag.**
+```
+git tag <tagname>   // git tag v5.1.1
+```
+**- Adding annotated tag.**
+```
+git tag -a <tagname>   // Ex: git tag -a v5.1.1
+// To display the tagger, date etc. use
+git show <tagname>   // Ex: git tag v5.1.1
 ```
