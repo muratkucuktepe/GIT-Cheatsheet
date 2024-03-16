@@ -268,6 +268,7 @@ git remote remove <name>        // Remove old one
 ### PUSH
 **- Pushing local branch A to remote branch A (if there  is no remote branch, it creates new)**
 ```
+// git push does not push tags.
 // Pushing local master branch to remote
 // You do not need to be on the same branch. You can be on branch A and use command git push origin branch-B
 git push <remote> <branch>   // Common pattern: git push origin master 
@@ -275,7 +276,7 @@ git push <remote> <branch>   // Common pattern: git push origin master
 **- Pushing local branch A to remote B**
 ```
 // Pushing local master branch to remote
-git push <remote> <local-branch>:<remote-branch>  // Common pattern: git push origin master
+git push <remote> <local-branch>:<remote-branch>
 
 // Ex: Pushing local branch called apple to remote branch banana in remote origin
 git push origin apple:banane
@@ -378,4 +379,22 @@ git show <tagname>   // Ex: git tag v5.1.1
 **- Tagging previous commit with hash number**
 ```
 git tag <tagname> <commmit-hash>   // Ex: git tag v5.1.2 56e85468
+```
+**- Moving an already existing tag to another commit**
+```
+// Each tag is unique. If you want to take existing tag and move to another commit use:
+// -f means force
+git tag <tagname> <new-commmit-hash> -f   // Ex: git tag v5.1.2 56e85468 -f 
+```
+**- Deleting tags**
+```
+git tag -d <tagname>   // -d means delete
+```
+**- Pushing tags**
+```
+// Pushing a single tag to remote
+git push <remote> <tagname>   // Ex: git push origin v1.2.2
+
+// Pushing all the tags at once
+git push <remote> --tags   // Ex: git push origin --tags
 ```
