@@ -1,5 +1,4 @@
 ### INITIALIZE GIT
----
 
 **- Initialize git which creates .git folder**
 ```
@@ -7,51 +6,40 @@ git init
 ```
 ---
 ### CLONE
----
-
 **- Clone a repo from a url**
 ```
 git clone <url>   // Be sure that you are not already in a repo
 ```
 ---
 ### ADD & COMMIT
----
 **- Adding all changes in working directory to the stage area.**
 ```
 git add .
 ```
----
 **- Adding multiple changes from working directory to the staging area (first-file, second-file).**
 ```
 git add <first-file> <second-file>`
 ```
-
----
 **- Commiting a change with message.**
 ```
 1: git add .                           // Add changes to the staging area
 2: git commit -m "your-message-here"   // Commit with a message
 ```
----
 **- Adding a change to staging area and commiting at the same time**
 ```
 git commit -a -m "your-message-here"   // 1. Way
 git commit -am "your-message-here"     // 2. Way
 ```
-
-### AMEND
 ---
-
+### AMEND
 **- Amend the last commit.**
 ```
 git add <my-forgotten-changes>   // Stage your forgotten changes
 git commit --amend               // Amend your last commit
                                  // Write your commit on terminal and hit esc, then wq!
 ```
-
-### CONFIGURATION
 ---
-
+### CONFIGURATION
 **- Change username.**
 ```
 git config user.name "your-user-name"
@@ -64,9 +52,8 @@ git config user.name
 ```
 git config remote.origin.prune true
 ```
-
+---
 ### CREATE BRANCH
-
 **- Create a new branch from current branch and switch to that branch.**
 ```
 git branch <new-branch-name>   // Create branch
@@ -77,16 +64,14 @@ git switch <new-branch-name>   // Switch to the new branch
 git switch -c <new-branch-name-to-create>     // 1. way
 git checkout -b <new-branch-name-to-create>   // 2. way
 ```
-
+---
 ### SHOW BRANCH
-
 **- Show current branch.**
 ```
 git branch
 ```
-
+---
 ### SWITCH BRANCH
-
 **- Switch branch.**
 ```
 git switch <branch-name-to-switch>     // 1. way
@@ -97,16 +82,14 @@ git checkout <branch-name-to-switch>   // 2. way
 git switch <remote-branch>                      // 1. way (new way) Ex: git switch my-remote-branch
 git checkout --track <remote>/<remote-branch>   // 2. way (old way) Ex: git checkout --track origin/my-remote-branch
 ```
-
+---
 ### CLEAN UP BRANCH
-
 **- Update local list of remote branches.**
 ```
 git remote update origin --prune
 ```
-
+---
 ### DELETE BRANCH
-
 **- Delete branch (2 ways). It only deletes the branch if it has already been fully merged in its upstream branch. You can not delete branch you are on.**
 ```
 git branch -d <branch-name-to-delete>         // 1. way
@@ -120,16 +103,14 @@ git branch -D <branch-name-to-delete>
 ```
 git push -d origin <branch-name-to-delete>
 ```
-
+---
 ### RENAME BRANCH
-
 **- Rename your local branch. You should be on the branch in order to rename it.**
 ```
 git branch -m <new-branch-name>
 ```
-
+---
 ### LOGS
-
 **- Show the commit logs.**
 ```
 git log
@@ -138,17 +119,15 @@ git log
 ```
 git log --oneline
 ```
-
+---
 ### MERGE BRANCH
-
 **- Merging branch A into branch B**
 ```
 git switch <branch-B>   // Switch branch.
 git merge <branch-A>    // Merge branch A into B
 ```
-
+---
 ### DIFF
-
 **- List all the changes in the working directory that are NOT STAGED for the next commit.**
 ```
 git diff
@@ -181,8 +160,8 @@ git diff BranchA  BranchB   // 2. Way
 git diff CommitHashA..CommitHashB   // 1. Way
 git diff CommitHashA  CommitHashB   // 2. Way
 ```
+---
 ### STASH CHANGES
-
 **- Stashing (or saving) your changes**
 ```
 git stash        // 1. Way
@@ -209,8 +188,8 @@ git stash apply stash@{2}   // Applying just a specific stash, second stash, but
 git stash drop stash@{2}    // Removes the second stash
 git stash clear             // Clears all stash
 ```
+---
 ### WORKING WITH PREVIOUS COMMITS / BRANCHES
-
 **- Switching a certain commit at the branch history**
 ```
 // The first 7 digits of the long hash can be also used here.
@@ -269,9 +248,8 @@ git revert <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 // If other collaborators have the copy of the commit which you want to revert, do not use reset but use revert.
 // It will create new commit, so collaborators can deal with it.
 ```
-
+---
 ### REMOTES
-
 **- Displaying a list of remotes**
 ```
 git remote   // Remotes
@@ -286,9 +264,8 @@ git remote add <name> <url>   //Ex: git remote add origin https://github.com/bla
 git remote rename <old> <new>   // Rename it
 git remote remove <name>        // Remove old one
 ```
-
+---
 ### PUSH
-
 **- Pushing local branch A to remote branch A (if there  is no remote branch, it creates new)**
 ```
 // Pushing local master branch to remote
@@ -318,24 +295,22 @@ git push -u <remote> <local-branch>:<remote-branch>
 // Ex: Connecting local branch called apple to remote branch banana in remote origin
 git push -u origin apple:banana
 ```
-
-### PULL
 ---
+### PULL
 **- Pulling changes integrates remote changes to local changes which you are currently on.**
 ```
 // git pull = git fetch + git merge
 git pull <remote> <remote-branch>   // Ex: git pull origin master
 git pull  // Shorter syntax. If remote is default to origin and remote branch will be default to your configured branch.
 ```
-
-### TRACKING BRANCHES
 ---
+### TRACKING BRANCHES
 **- View the remote branches our local repository knows about.**
 ```
 git branch -r   // Note: It shows just remote branches in LOCAL REPOSITORY not in Origin!
 ```
-### FETCHING UPDATES
 ---
+### FETCHING UPDATES
 **- Fetch everything from origin**
 ```
 // It fetches new code from remote to the local repository, NOT working directory
@@ -346,8 +321,8 @@ git fetch            // You can just shorten it. After that git status shows you
 git fetch <remote> <branch>      // Fetches from a specific branch. Ex: git fetch origin master
 git checkout <remote>/<branch>   // To see the fetched changes. Ex: git checkout origin/master   
 ```
-### REBASE
 ---
+### REBASE
 **- Rebasing feature branch on top of master branch.**
 ```
 git switch feature   // Switch to the feature branch
@@ -375,6 +350,7 @@ edit:   use commit but stop for amending
 fixup:  use commit contents but meld it into previous commit and discard the commit message
 drop:   remove commit
 ```
+---
 ### TAGS
 **- Listing and searching for tags**
 ```
@@ -398,4 +374,8 @@ git tag <tagname>   // git tag v5.1.1
 git tag -a <tagname>   // Ex: git tag -a v5.1.1
 // To display the tagger, date etc. use
 git show <tagname>   // Ex: git tag v5.1.1
+```
+**- Tagging previous commit with hash number**
+```
+git tag <tagname> <commmit-hash>   // Ex: git tag v5.1.2 56e85468
 ```
