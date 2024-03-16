@@ -383,3 +383,7 @@ git tag -l "*WORD*"   // Searches WORD in tags with wildcard. -l means list
 ```
 git checkout <tag>  // Ex: git checkout 17.1.1
 ```
+**- Find the difference between two tags.**
+```
+git diff <tag1> <tag2>   // Ex: git diff v5.1.1 v5.1.0
+```
