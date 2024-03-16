@@ -379,3 +379,7 @@ drop:   remove commit
 git tag               // Lists all tags
 git tag -l "*WORD*"   // Searches WORD in tags with wildcard. -l means list
 ```
+**- Check out different tags**
+```
+git checkout <tag>  // Ex: git checkout 17.1.1
+```
