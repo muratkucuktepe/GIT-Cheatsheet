@@ -373,3 +373,9 @@ edit:   use commit but stop for amending
 fixup:  use commit contents but meld it into previous commit and discard the commit message
 drop:   remove commit
 ```
+### TAGS
+**- Listing and searching for tags**
+```
+git tag               // Lists all tags
+git tag -l "*WORD*"   // Searches WORD in tags with wildcard. -l means list
+```
