@@ -167,6 +167,10 @@ git diff CommitHashA  CommitHashB   // 2. Way
 git stash        // 1. Way
 git stash save   // 2. Way
 ```
+**- Stashing with a message**
+```
+git stash push -m "your-message"
+```
 **- Re-applying stashed changes. It removes saved changes from stash**
 ```
 git stash pop
