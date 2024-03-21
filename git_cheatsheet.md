@@ -42,7 +42,8 @@ git commit --amend               // Amend your last commit
 ### CONFIGURATION
 **- Change username.**
 ```
-git config user.name "your-user-name"
+git config user.name "your-user-name"           // Change globally
+git config --local user.name "your-user-name"   // Change locally 
 ```
 **- Show username.**
 ```
@@ -401,4 +402,16 @@ git push <remote> <tagname>   // Ex: git push origin v1.2.2
 
 // Pushing all the tags at once
 git push <remote> --tags   // Ex: git push origin --tags
+```
+---
+### CONFIG FILE
+**- Editing config file under .git directory**
+```
+[color]                    
+    ui = true
+[color "branch"]            // Branch color settings
+    local = cyan            // Setting local branch color
+    current = yellow blink  // Setting current branch color 
+[color "diff"]
+    old = magenta bold      // Setting outcome of diff
 ```
