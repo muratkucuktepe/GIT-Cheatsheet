@@ -437,12 +437,12 @@ git cat-file -p <object-hash>   // This prints the human readable value of the s
 ```
 **- Viewing a tree and the type of the hash**
 ```
-git cat-file -p master^{tree}   // Viewing master branch tree
+git cat-file -p master^{tree}   // Views master branch tree
 git cat-file -t <object-hash>   // Shows the type of the hash object. t means type
 ```
 ---
-### LOGS
-**- Logs file in .git directory.**
+### REFLOGS
+**- Reflogs file in .git directory.**
 ```
 // Git keeps reflogs just on your activity.
 // Git cleans them after 90 days. It is configurable
@@ -453,4 +453,13 @@ git reflog show HEAD            // Shows the logs of HEAD
 git reflog show <branch-name>   // Shows the logs of a specific branch
 git reflog                      // Shows the log of a specific reference. Default is HEAD
 ```
-
+**- Going back to a certain reflog**
+```
+// name@{qualifier} is used.
+git reflog show HEAD${2}   // Shows 2 steps before
+```
+```
+// There is a difference between HEAD~2 and HEAD@{2}
+// HEAD~2 shows 2 commits ago
+// HEAD@{2} shows 2 steps back at reflogs
+```
