@@ -416,7 +416,7 @@ git push <remote> --tags   // Ex: git push origin --tags
     old = magenta bold      // Setting outcome of diff
 ```
 ### HASHING
-**- Hashing a word**
+**- Hashing a word or a file**
 ```
 // A blob is a file
 // A tree is a directory
@@ -440,3 +440,17 @@ git cat-file -p <object-hash>   // This prints the human readable value of the s
 git cat-file -p master^{tree}   // Viewing master branch tree
 git cat-file -t <object-hash>   // Shows the type of the hash object. t means type
 ```
+---
+### LOGS
+**- Logs file in .git directory.**
+```
+// Git keeps reflogs just on your activity.
+// Git cleans them after 90 days. It is configurable
+```
+```
+// There are other qualifiers as well. expire, delete, exists
+git reflog show HEAD            // Shows the logs of HEAD
+git reflog show <branch-name>   // Shows the logs of a specific branch
+git reflog                      // Shows the log of a specific reference. Default is HEAD
+```
+
