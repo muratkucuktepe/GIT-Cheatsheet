@@ -478,3 +478,9 @@ git checkout bugfix@{two.days.ago}
 git reflog master@{one.month.ago}
 git diff main@{0} main@{yesterday}
 ```
+**- Rescuing hard reset commits with reflogs**
+```
+// If you reset hard the last commit by using git reset --hard <one-previous-commit-hash>
+git reflog show master        // Show the reflogs on current branch. In this case master.
+git reset --hard master@{1}   // Bring back the commit either using qualifier or hash. In this case qualifier.
+```
