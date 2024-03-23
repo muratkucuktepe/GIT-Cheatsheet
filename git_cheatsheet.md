@@ -421,4 +421,13 @@ git push <remote> --tags   // Ex: git push origin --tags
 echo 'a-word' | git hash-object --stdin     // Returns a 40-char long hash but does not store in git database. This is just echo
 echo 'a-word' | git hash-object --stdin -w  // Returns hash and stores it in .git. w means write.
 // It stores with first 2 chars as a folder, and the rest 38 chars as file. It is saved as encrypted binary, not readable.
+
+git hash-object aFile.txt                   // Hashing a text file without storing
+git hash-object aFile.txt -w                // Hashing a text file and storing it
+git cat-file -p <object-hash> > aFile.txt   // Retrieves values from hash and stores them in aFile.txt
+```
+**- Retrieving hashed data back from git database**
+```
+git cat-file -p <object-hash>   // This prints the human readable value of the stored hash. p means print
+// 40-char hash value as well as shortened version (5-chars) can be used.
 ```
