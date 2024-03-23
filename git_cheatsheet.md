@@ -161,6 +161,12 @@ git diff BranchA  BranchB   // 2. Way
 git diff CommitHashA..CommitHashB   // 1. Way
 git diff CommitHashA  CommitHashB   // 2. Way
 ```
+**- Time based diffs**
+```
+// Examples
+git diff HEAD HEAD@{yesterday}
+git diff master master@{yesterday}
+```
 ---
 ### STASH CHANGES
 **- Stashing (or saving) your changes**
@@ -462,4 +468,13 @@ git reflog show HEAD${2}   // Shows 2 steps before
 // There is a difference between HEAD~2 and HEAD@{2}
 // HEAD~2 shows 2 commits ago
 // HEAD@{2} shows 2 steps back at reflogs
+```
+**- Time based reflogs**
+```
+// Examples
+git reflog master@{one.week.ago}
+git checkout bugfix@{2.days.ago}
+git checkout bugfix@{two.days.ago}
+git reflog master@{one.month.ago}
+git diff main@{0} main@{yesterday}
 ```
