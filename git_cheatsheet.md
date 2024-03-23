@@ -415,3 +415,10 @@ git push <remote> --tags   // Ex: git push origin --tags
 [color "diff"]
     old = magenta bold      // Setting outcome of diff
 ```
+### HASHING
+**- Hashing a word**
+```
+echo 'a-word' | git hash-object --stdin     // Returns a 40-char long hash but does not store in git database. This is just echo
+echo 'a-word' | git hash-object --stdin -w  // Returns hash and stores it in .git. w means write.
+// It stores with first 2 chars as a folder, and the rest 38 chars as file. It is saved as encrypted binary, not readable.
+```
