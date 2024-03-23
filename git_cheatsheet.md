@@ -418,6 +418,10 @@ git push <remote> --tags   // Ex: git push origin --tags
 ### HASHING
 **- Hashing a word**
 ```
+// A blob is a file
+// A tree is a directory
+// A tree can have blobs and trees in it.
+
 echo 'a-word' | git hash-object --stdin     // Returns a 40-char long hash but does not store in git database. This is just echo
 echo 'a-word' | git hash-object --stdin -w  // Returns hash and stores it in .git. w means write.
 // It stores with first 2 chars as a folder, and the rest 38 chars as file. It is saved as encrypted binary, not readable.
@@ -430,4 +434,9 @@ git cat-file -p <object-hash> > aFile.txt   // Retrieves values from hash and st
 ```
 git cat-file -p <object-hash>   // This prints the human readable value of the stored hash. p means print
 // 40-char hash value as well as shortened version (5-chars) can be used.
+```
+**- Viewing a tree and the type of the hash**
+```
+git cat-file -p master^{tree}   // Viewing master branch tree
+git cat-file -t <object-hash>   // Shows the type of the hash object. t means type
 ```
