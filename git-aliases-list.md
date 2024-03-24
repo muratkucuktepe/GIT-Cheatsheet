@@ -32,3 +32,11 @@ Command line: git config --global alias.hist "log --pretty=format:'%h %ad | %s%d
 Usage: git hist
 ```
 ---
+**4 - Show last commit**
+```
+Global Config File:
+last = log -1 HEAD
+Command line: git config --global alias.last "log -1 HEAD"
+Usage: git last
+```
+---
