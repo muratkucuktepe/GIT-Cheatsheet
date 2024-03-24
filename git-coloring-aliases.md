@@ -56,12 +56,16 @@ git config --global color.diff.func "#cc99cc"
 git config --global color.branch.current "yellow reverse"
 git config --global color.branch.local "yellow"
 git config --global color.branch.remote "green"
+git config --system color.branch.upstream "brightwhite cyan"
+git config --system color.branch.plain "white"
 ```
 ```
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+        upstream = brightwhite cyan
+        plain = white
 ```
 ---
 **STATUS**
