@@ -517,3 +517,9 @@ git config --global alias.displaybranches branch
 git cm "My commit message without -m"
 git a firstFile secondFile
 ```
+```
+// Useful links
+https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
+https://github.com/GitAlias/gitalias
+https://gist.github.com/mwhite/6887990
+```
