@@ -61,12 +61,14 @@ git config user.name
 ```
 git config remote.origin.prune true
 ```
-**- Listing global configs and removing them (Ex: alias).**
+**- Listing global configs and editing them (Ex: alias).**
 ```
 // Get the list with keys
 git config --global --list 
 // Remove a config with key example
 git config --global --unset alias.myCustomAlias
+// Edit config file directly with command line
+git config --global --edit
 ```
 ---
 ### CREATE BRANCH
