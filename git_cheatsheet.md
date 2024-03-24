@@ -507,3 +507,13 @@ git reset --hard master@{1}   // Bring back the commit either using qualifier or
 // Set git displaybranches as alias for git branch
 git config --global alias.displaybranches branch
 ```
+**- Setting aliases with arguments**
+```
+[alias]
+   cm=commit -m
+   a=add file1 file2
+
+// Now you can use
+git cm "My commit message without -m"
+git a firstFile secondFile
+```
