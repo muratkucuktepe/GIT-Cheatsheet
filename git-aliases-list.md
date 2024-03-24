@@ -10,13 +10,17 @@ git config --global --unset alias.myCustomAlias
 
 **1 - Find a file path in codebase**
 ```
+Global Config File:
 f = "!git ls-files | grep -i"
+Command line: git config --global alias.f '!git ls-files | grep -i'
 Usage: git f <myFile>
 ```
 ---
 **2 - Show which file is changed in each commit**
 ```
+Global Config File:
 ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+Command line: git config --global alias.ll "log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --numstat"
 Usage: git ll
 ```
 ---
