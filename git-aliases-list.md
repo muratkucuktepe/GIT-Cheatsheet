@@ -1,7 +1,10 @@
 ### GIT ALIASES
 **0 - Display list of global aliases**
 ```
-git config --global --list
+// Get the list with keys
+git config --global --list 
+// Remove a config with key example
+git config --global --unset alias.myCustomAlias
 ```
 ---
 
