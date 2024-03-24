@@ -40,10 +40,18 @@ git commit --amend               // Amend your last commit
 ```
 ---
 ### CONFIGURATION
-**- Change username.**
 ```
-git config user.name "your-user-name"           // Change globally
-git config --local user.name "your-user-name"   // Change locally 
+// Local config file is under ./git config
+// Local config file is valid for ONE repo
+// Global config file is under either ~/.config or ~/.config/git/config
+// Global config file is for ALL repos
+```
+**- Change username or e-mail address.**
+```
+git config user.name "your-user-name"              // Change globally
+git config --local user.name "your-user-name"      // Change locally
+git config --global user.name "your-user-name"     // Change globally
+git config --global user.email "your-user-email"   // Change globally 
 ```
 **- Show username.**
 ```
@@ -483,4 +491,19 @@ git diff main@{0} main@{yesterday}
 // If you reset hard the last commit by using git reset --hard <one-previous-commit-hash>
 git reflog show master        // Show the reflogs on current branch. In this case master.
 git reset --hard master@{1}   // Bring back the commit either using qualifier or hash. In this case qualifier.
+```
+---
+### ALIASES
+**- Setting aliases for commands.**
+```
+// Find the global file: ~/.config or ~/.config/git/config
+// Set s for git status and l for git log
+[alias]
+   s=status
+   l=log
+```
+```
+// Adding alias from command line
+// Set git displaybranches as alias for git branch
+git config --global alias.displaybranches branch
 ```
