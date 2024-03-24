@@ -13,6 +13,17 @@ git config --global color.diff.meta "blue black bold"
 git config --global color.diff.frag "magenta bold"
 git config --global color.diff.old "red bold"
 git config --global color.diff.new "green bold"
+git config --global color.diff.context "#999999"
+git config --global color.diff.func "#cc99cc"
+```
+```
+[color "diff"]
+    meta = blue black bold
+    frag = magenta bold
+    old = red bold
+    func = "#cc99cc"
+    new = green bold
+    context = "#999999"   
 ```
 ---
 **BRANCH**
