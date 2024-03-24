@@ -43,12 +43,12 @@ git config --global color.diff.func "#cc99cc"
 ```
 ```
 [color "diff"]
-    meta = blue black bold
-    frag = magenta bold
-    old = red bold
-    func = "#cc99cc"
-    new = green bold
-    context = "#999999"   
+	meta = blue black bold
+	frag = magenta bold
+	old = red bold
+	func = "#cc99cc"
+	new = green bold
+	context = "#999999"   
 ```
 ---
 **BRANCH**
@@ -73,7 +73,7 @@ git config --global color.status.untracked "cyan"
 ```
 ```
 [color "status"]
-    header = "#999999"
+	header = "#999999"
 	added = yellow
 	changed = green
 	untracked = cyan
