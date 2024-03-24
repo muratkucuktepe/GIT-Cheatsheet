@@ -42,3 +42,10 @@ Command line: git config --global alias.last "log -1 HEAD"
 Usage: git last
 ```
 ---
+**5 - List of commits which are not pushed to remote yet**
+```
+Global Config File:
+unpushed = '!git log --oneline --all --not --remotes=origin'
+Command line: git config --global alias.unpushed '!git log --oneline --all --not --remotes=origin'
+Usage: git unpushed
+```
