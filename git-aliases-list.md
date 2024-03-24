@@ -29,6 +29,6 @@ Usage: git ll
 Global Config File:
 hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 Command line: git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
-Usage: git ll
+Usage: git hist
 ```
 ---
