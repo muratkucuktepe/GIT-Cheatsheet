@@ -21,3 +21,10 @@ git config --global color.branch.current "yellow reverse"
 git config --global color.branch.local "yellow"
 git config --global color.branch.remote "green"
 ```
+---
+**STATUS**
+```
+git config --global color.status.added "yellow"
+git config --global color.status.changed "green"
+git config --global color.status.untracked "cyan"
+```
