@@ -5,6 +5,8 @@
 git config --global --list 
 // Remove a config with key example
 git config --global --unset alias.myCustomAlias
+// Edit config file directly with command line
+git config --global --edit
 ```
 ---
 
