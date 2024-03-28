@@ -275,6 +275,9 @@ git revert <commit-hash>  // This DELETES the changes in your WORKING DIRECTORY
 // IMPORTANT: This deletes the changes in the reverted commit.
 // If other collaborators have the copy of the commit which you want to revert, do not use reset but use revert.
 // It will create new commit, so collaborators can deal with it.
+
+// Reverting the last PR
+git commit -m 1 <pr-commit-hash>
 ```
 ---
 ### REMOTES
