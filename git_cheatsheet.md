@@ -95,6 +95,12 @@ git checkout -b <new-branch-name-to-create>   // 2. way
 git branch
 ```
 ---
+### CHERRY PICK
+**- Cherry picking**
+```
+git cherry-pick <commit-hash>
+```
+---
 ### SWITCH BRANCH
 **- Switch branch.**
 ```
