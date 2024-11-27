@@ -54,7 +54,7 @@ git commit --amend               // Amend your last commit
 ```
 **- Change username or e-mail address.**
 ```
-git config user.name "your-user-name"              // Change globally
+git config user.name "your-user-name"              // Change locally. If you do not specify, default is local
 git config --local user.name "your-user-name"      // Change locally
 git config --global user.name "your-user-name"     // Change globally
 git config --global user.email "your-user-email"   // Change globally 
