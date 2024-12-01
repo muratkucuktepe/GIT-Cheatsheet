@@ -49,3 +49,11 @@ unpushed = '!git log --oneline --all --not --remotes=origin'
 Command line: git config --global alias.unpushed '!git log --oneline --all --not --remotes=origin'
 Usage: git unpushed
 ```
+---
+**6 - Search something in commit messages**
+```
+Global Config File:
+search-commit = '!git log --all --grep'
+Command line: git config --global alias.search-commit '!git log --all --grep'
+Usage: search-commit "WordToSearch"
+```
