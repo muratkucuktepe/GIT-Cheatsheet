@@ -230,6 +230,10 @@ git stash clear             // Clears all stash
 ```
 ---
 ### WORKING WITH PREVIOUS COMMITS / BRANCHES
+```
+// If you already pushed your changes and make changes again and accidentally click amend.
+git reset --soft origin/main
+```
 **- Switching a certain commit at the branch history**
 ```
 // The first 7 digits of the long hash can be also used here.
