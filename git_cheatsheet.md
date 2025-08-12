@@ -66,6 +66,7 @@ git config user.name
 **- Set to update the local list of remote git branches automatically every time you run git pull or git fetch using below command.**
 ```
 git config remote.origin.prune true
+git config --global fetch.prune true   // Globally
 ```
 **- Listing global configs and editing them (Ex: alias).**
 ```
